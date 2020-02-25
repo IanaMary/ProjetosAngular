@@ -1,0 +1,37 @@
+<html ng-app="loja">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" 
+		src="resources/script/angular.min.js">
+</script>
+<script type="text/javascript" 
+		src="resources/script/primeiroController.js">
+</script>
+</head>
+<body ng-controller="primeiroController as user" id="corpo">
+	
+	<input type="text" ng-model="user.meuNome">
+	<br/>
+	
+	<input type="text" ng-model="user.meuSobrenome">
+	<br/>
+	
+	<h1>Nome: {{user.meuNome}}</h1>
+	<h1>Sobrenome: {{user.meuSobrenome}}</h1>
+	<br/>
+	
+	<hr>
+	<button ng-click="subContador();">SUB</button>
+	<button ng-click="addContador();">ADD</button>
+	<h1>Contador: {{contador}}</h1>
+	
+	<hr>
+	<h1>LOOP</h1>
+	<ul>
+		<li ng-repeat="nome in pessoas">{{nome}}</li>
+	</ul>
+	
+	
+</body>
+</html>
