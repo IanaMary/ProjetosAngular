@@ -18,3 +18,4 @@ app.controller('primeiroController', ['$scope', function($scope){
 	$scope.pessoas = ['Iana', 'Mary', 'Rodrigo', 'Clara'];
 	
 }]);
+
